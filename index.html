@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Multiplay Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body >
+    <!-- cube one -->
+    <div class="container-one anim">
+        <div class="cube anim2">
+            <div class="face frist-face">
+                <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
+            </div>
+            <div class="face second-face">
+                <span class="dot" style="transform: translateY(45px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(45px) translateX(30px)"></span>
+            </div>
+            <div class="face third-face">
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+            </div>
+            <div class="face fourth-face">
+                <span class="dot" style="transform: translateY(30px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(60px)"></span>
+            </div>
+            <div class="face fift-face">
+                <span class="dot" style="transform: translateY(30px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(60px)"></span>
+            </div>
+            <div class="face sixth-face">
+                <span class="dot" style="transform: translateY(30px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(60px)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- cube two -->
+    <div class="container-two anim4">
+        <div class="cube anim3">
+            <div class="face frist-face">
+                <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
+            </div>
+            <div class="face second-face">
+                <span class="dot" style="transform: translateY(45px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(45px) translateX(30px)"></span>
+            </div>
+            <div class="face third-face">
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+            </div>
+            <div class="face fourth-face">
+                <span class="dot" style="transform: translateY(30px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(60px)"></span>
+            </div>
+            <div class="face fift-face">
+                <span class="dot" style="transform: translateY(30px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(60px)"></span>
+            </div>
+            <div class="face sixth-face">
+                <span class="dot" style="transform: translateY(30px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(30px) translateX(60px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(30px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(45px)"></span>
+                <span class="dot" style="transform: translateY(60px) translateX(60px)"></span>
+            </div>
+        </div>
+    </div> 
+
+
+
+    <div class="player-one">
+        <label class="Player-name">Player 1</label>
+        <button id="fristButton" onclick="PlayBtnClick('one')" class="play-button">Roll the dice</button>
+    </div>
+
+    <div class="player-two">
+        <label class="Player-name">Player 2</label>
+        <button id="fristButton" onclick="PlayBtnClick('two')" class="play-button">Roll the dice</button>
+    </div>
+</body>
+
+</html>
