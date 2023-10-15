@@ -18,7 +18,7 @@ body {
   perspective: 1000px;
   width: var(--size);
   height: var(--size);
-  animation: 3s infinite;
+  animation: 3s;
 }
 
 .container-two {
@@ -28,7 +28,7 @@ body {
   perspective: 1000px;
   width: var(--size);
   height: var(--size);
-  animation: 3s infinite;
+  animation: 3s;
 }
 
 .cube {
@@ -36,7 +36,6 @@ body {
   width: 50%;
   transform-style: preserve-3d;
   animation: 1s linear;
-  /* transform: rotateX(-45deg) rotateY(35deg);  */
 }
 
 .face {
@@ -49,7 +48,6 @@ body {
   line-height: var(--size);
   font-size: 18pt;
   background-color: #ffffff;
-  animation: 2s linear;
 }
 
 .frist-face {
@@ -97,7 +95,7 @@ body {
   }
 
   100% {
-    transform: translateX(-800px) translateY(400px);
+    transform: translateX(-500px) translateY(500px);
   }
 }
 
@@ -113,7 +111,7 @@ body {
   }
 
   100% {
-    transform: translateX(-400px) translateY(500px);
+    transform: translateX(-700px) translateY(400px);
   }
 }
 
@@ -158,6 +156,8 @@ body {
   bottom: 0;
   width: 300px;
   height: 400px;
+  text-align: center;
+  color: aquamarine;
 }
 
 .player-two {
@@ -166,6 +166,8 @@ body {
   right: 0;
   width: 300px;
   height: 400px;
+  text-align: center;
+  color: #7fffd4
 }
 
 .Player-name {
@@ -174,13 +176,33 @@ body {
   font-weight: bolder;
 }
 
+.player-img{
+  position: absolute;
+  height: 30%;
+  top: 20%;
+  right: 30%;
+}
+
+.score-lable{
+  position: absolute;
+  font-size: 20pt;
+  top: 60%;
+  left: 0;
+  width: 300px;
+}
+
 .play-button {
   position: absolute;
   bottom: 10px;
   right: 10%;
   width: 80%;
-  height: 10%;
+  height: 15%;
   border-radius: 20px;
   font-size: larger;
   font-weight: bolder;
+  background-color: #7fffd4;
+}
+
+.play-button:hover{
+  background-color: #00ffaa;
 }

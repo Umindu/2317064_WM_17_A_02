@@ -11,8 +11,8 @@
 
 <body >
     <!-- cube one -->
-    <div class="container-one anim">
-        <div class="cube anim2">
+    <div class="container-one">
+        <div id="cubeOne" class="cube anim2">
             <div class="face frist-face">
                 <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
             </div>
@@ -50,8 +50,8 @@
     </div>
 
     <!-- cube two -->
-    <div class="container-two anim4">
-        <div class="cube anim3">
+    <div class="container-two">
+        <div id="cubeTwo" class="cube anim3">
             <div class="face frist-face">
                 <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
             </div>
@@ -92,11 +92,15 @@
 
     <div class="player-one">
         <label class="Player-name">Player 1</label>
+        <img class="player-img" src="image/player.png" alt="player">
+        <label class="score-lable">Score : 0</label>
         <button id="fristButton" onclick="PlayBtnClick('one')" class="play-button">Roll the dice</button>
     </div>
 
     <div class="player-two">
         <label class="Player-name">Player 2</label>
+        <img class="player-img" src="image/player.png" alt="player">
+        <label class="score-lable">Score : 0</label>
         <button id="fristButton" onclick="PlayBtnClick('two')" class="play-button">Roll the dice</button>
     </div>
 </body>
