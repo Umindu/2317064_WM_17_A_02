@@ -10,9 +10,10 @@
 </head>
 
 <body >
+    <h1 class="start-animation">START</h1>
     <!-- cube one -->
-    <div class="container-one">
-        <div id="cubeOne" class="cube anim2">
+    <div id="containerOne" class="container-one">
+        <div id="cubeOne" class="cube">
             <div class="face frist-face">
                 <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
             </div>
@@ -50,8 +51,8 @@
     </div>
 
     <!-- cube two -->
-    <div class="container-two">
-        <div id="cubeTwo" class="cube anim3">
+    <div id="containerTwo" class="container-two">
+        <div id="cubeTwo" class="cube">
             <div class="face frist-face">
                 <span class="dot" style="transform: translateY(45px) translateX(45px)"></span>
             </div>
@@ -93,15 +94,15 @@
     <div class="player-one">
         <label class="Player-name">Player 1</label>
         <img class="player-img" src="image/player.png" alt="player">
-        <label class="score-lable">Score : 0</label>
+        <label id="scoreOne" class="score-lable">Score : 0</label>
         <button id="fristButton" onclick="PlayBtnClick('one')" class="play-button">Roll the dice</button>
     </div>
 
     <div class="player-two">
         <label class="Player-name">Player 2</label>
         <img class="player-img" src="image/player.png" alt="player">
-        <label class="score-lable">Score : 0</label>
-        <button id="fristButton" onclick="PlayBtnClick('two')" class="play-button">Roll the dice</button>
+        <label id="scoreTwo" class="score-lable">Score : 0</label>
+        <button id="secondButton" onclick="PlayBtnClick('two')" class="play-button" disabled>Roll the dice</button>
     </div>
 </body>
 
