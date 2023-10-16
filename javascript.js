@@ -19,7 +19,6 @@ async function PlayBtnClick(player) {
     var audio = new Audio('image/sound.mp3');
     audio.play();
     
-
     var ran1 = Math.floor(Math.random() * 6) + 1;
     var ran2 = Math.floor(Math.random() * 6) + 1;
 
@@ -96,15 +95,28 @@ async function PlayBtnClick(player) {
 
         if(player === 'one'){
             p1TotalScore = p1TotalScore+ran1+ran2
-            document.getElementById("scoreOne").innerHTML = "Score : "+(p1TotalScore);
+            document.getElementById("scoreOne").innerHTML = "Score : "+(p1TotalScore)+"/50";
             document.getElementById("secondButton").disabled = false;
         }
         else{
             p2TotalScore = p2TotalScore+ran1+ran2
-            document.getElementById("scoreTwo").innerHTML = "Score : "+(p2TotalScore);
+            document.getElementById("scoreTwo").innerHTML = "Score : "+(p2TotalScore)+"/50";
             document.getElementById("fristButton").disabled = false;
+        }
+
+        if(p1TotalScore>=50){
+            document.getElementById("winAnim").style.display = 'block';
+        }
+        else if(p2TotalScore >= 50){
+            document.getElementById("winAnim").style.display = 'block';
+            document.getElementById("playerName").innerHTML = "Player 2 is";
         }
 
     }, 970);
 
+}
+
+
+function refreshPage(){
+    window.location.reload();
 }

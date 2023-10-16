@@ -19,6 +19,7 @@ h1{
   color: #00ffaa;
   animation: 3s;
   transform: translateY(-500px);
+  text-shadow: 10px 10px 10px #000000;
 }
 
 .start-animation {
@@ -47,6 +48,46 @@ h1{
     transform: translateY(-500px);;
   }
 }
+
+.win-contaner{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #00ffaa;
+  display: none;
+  background-color: #000000b8;
+  z-index: 1;
+}
+
+h2{
+  font-size: 100pt;
+  line-height: 0px;
+  text-shadow: 10px 10px 10px #000000;
+}
+
+h3{
+  padding-top: 150px;
+  font-size: 50pt;
+  line-height: 0px;
+  /* letter-spacing: 10pt; */
+  color: #00ffaa;
+  text-shadow: 10px 10px 10px #000000;
+}
+
+.re-button{
+  height: 50px;
+  font-size: 20pt;
+  font-weight: bold;
+  background-color: transparent;
+  border: 0;
+  color: #00ffaa;
+}
+
+.re-button:hover{
+  text-shadow: 0px 0px 15px #00ffaa;
+}
+
 
 .container-one {
   position: absolute;
@@ -238,8 +279,12 @@ h1{
   font-size: larger;
   font-weight: bolder;
   background-color: #7fffd4;
+  border: 0;
 }
+
+
 
 .play-button:hover{
   background-color: #00ffaa;
+  box-shadow: 0px 0px 20px #7fffd4;
 }

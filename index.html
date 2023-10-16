@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Multiplay Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="javascript.js"></script>
 </head>
 
 <body >
     <h1 class="start-animation">START</h1>
+
+    <div id="winAnim" class="win-contaner">
+        <h3 id="playerName">Player 1 is</h3>
+        <h2>Winner</h2>
+        <button class="re-button" onclick="refreshPage()"><i class="fa fa-refresh"></i> Play again</button>
+    </div>
     <!-- cube one -->
     <div id="containerOne" class="container-one">
         <div id="cubeOne" class="cube">
@@ -94,14 +101,14 @@
     <div class="player-one">
         <label class="Player-name">Player 1</label>
         <img class="player-img" src="image/player.png" alt="player">
-        <label id="scoreOne" class="score-lable">Score : 0</label>
+        <label id="scoreOne" class="score-lable">Score : 0/50</label>
         <button id="fristButton" onclick="PlayBtnClick('one')" class="play-button">Roll the dice</button>
     </div>
 
     <div class="player-two">
         <label class="Player-name">Player 2</label>
         <img class="player-img" src="image/player.png" alt="player">
-        <label id="scoreTwo" class="score-lable">Score : 0</label>
+        <label id="scoreTwo" class="score-lable">Score : 0/50</label>
         <button id="secondButton" onclick="PlayBtnClick('two')" class="play-button" disabled>Roll the dice</button>
     </div>
 </body>
