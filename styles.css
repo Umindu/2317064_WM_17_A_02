@@ -161,12 +161,12 @@ h3{
   display: block;
 }
 
-.anim {
-  animation-name: example;
+.one-move {
+  animation-name: move1;
   animation-iteration-count: 1;
 }
 
-@keyframes example {
+@keyframes move1 {
 
   0% {
     transform: translateX(0px) translateY(0px);
@@ -177,12 +177,12 @@ h3{
   }
 }
 
-.anim4 {
-  animation-name: example4;
+.two-move {
+  animation-name: move2;
   animation-iteration-count: 1;
 }
 
-@keyframes example4 {
+@keyframes move2 {
 
   0% {
     transform: translateX(0px) translateY(0px);
@@ -193,12 +193,12 @@ h3{
   }
 }
 
-.anim2 {
-  animation-name: example2;
+.one-rotate {
+  animation-name: rotate1;
   animation-iteration-count: 100;
 }
 
-@keyframes example2 {
+@keyframes rotate1 {
 
   0% {
     transform: rotateX(0deg) rotateY(0deg);
@@ -209,12 +209,12 @@ h3{
   }
 }
 
-.anim3 {
-  animation-name: example3;
+.two-rotate {
+  animation-name: rotate2;
   animation-iteration-count: 100;
 }
 
-@keyframes example3 {
+@keyframes rotate2 {
 
   0% {
     transform: rotateX(-160deg) rotateY(-160deg);

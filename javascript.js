@@ -1,24 +1,11 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.getElementById('fristButton').addEventListener('click', function() {
-
-//         console.log("@@")
-//         var elements = document.getElementsByClassName("face");
-//         for (var i = 0; i < elements.length; i++) {
-//             elements[i].classList.add("anim");
-//         }
-
-//     });
-// });
-
 var p1TotalScore = 0;
 var p2TotalScore = 0;
 
 document.getElementById("secondButton").disabled = true;
 
+// play function
 async function PlayBtnClick(player) {
-    var audio = new Audio('image/sound.mp3');
-    audio.play();
-    
+
     var ran1 = Math.floor(Math.random() * 6) + 1;
     var ran2 = Math.floor(Math.random() * 6) + 1;
 
@@ -28,29 +15,31 @@ async function PlayBtnClick(player) {
     var cube1 = document.getElementById("cubeOne");
     var cube2 = document.getElementById("cubeTwo");
 
-    if(player === 'one'){
-        document.getElementById("fristButton").disabled = true;
-        document.getElementById("secondButton").disabled = true;
-    }
-    else{
-        document.getElementById("secondButton").disabled = true;
-        document.getElementById("fristButton").disabled = true;
-    }
+    //sound effect 
+    var audio = new Audio('sound/sound.mp3');
+    audio.play();
 
-    elements1.classList.add("anim");
-    elements2.classList.add("anim4");
+    //disavle play button
+    document.getElementById("secondButton").disabled = true;
+    document.getElementById("fristButton").disabled = true;
+  
+    //add cube animation 
+    elements1.classList.add("one-move");
+    elements2.classList.add("two-move");
 
-    cube1.classList.add("anim2");
-    cube2.classList.add("anim3");
+    cube1.classList.add("one-rotate");
+    cube2.classList.add("two-rotate");
 
     setTimeout(function () {
 
+        //remove cube animation
         elements1.style.animationPlayState = 'paused';
         elements2.style.animationPlayState = 'paused';
 
-        cube1.classList.remove("anim2");
-        cube2.classList.remove("anim3");
+        cube1.classList.remove("one-rotate");
+        cube2.classList.remove("two-rotate");
 
+        //cube one rotate
         switch (ran1) {
             case 1:
                 cube1.style.transform = 'rotateX(0deg) rotateY(0deg)';
@@ -72,6 +61,7 @@ async function PlayBtnClick(player) {
                 break;
         }
 
+        //cube two rotate
         switch (ran2) {
             case 1:
                 cube2.style.transform = 'rotateX(0deg) rotateY(0deg)';
@@ -93,6 +83,7 @@ async function PlayBtnClick(player) {
                 break;
         }
 
+        //score calculation
         if(player === 'one'){
             p1TotalScore = p1TotalScore+ran1+ran2
             document.getElementById("scoreOne").innerHTML = "Score : "+(p1TotalScore)+"/50";
@@ -104,6 +95,7 @@ async function PlayBtnClick(player) {
             document.getElementById("fristButton").disabled = false;
         }
 
+        //win animation
         if(p1TotalScore>=50){
             document.getElementById("winAnim").style.display = 'block';
         }
@@ -117,6 +109,7 @@ async function PlayBtnClick(player) {
 }
 
 
+//refrash function
 function refreshPage(){
     window.location.reload();
 }
